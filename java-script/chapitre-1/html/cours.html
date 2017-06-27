@@ -1,0 +1,382 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/cours.css" type="text/css" media="screen" />
+    <title>Introduction à JavaScript</title>
+
+</head>
+
+<body>
+    <script src="../js/cours.js"></script>
+    <h1>Les valeurs de type nombre</h1>
+    <h2>Il existe différentes valeurs de type nombre : </h2>
+    <ul>
+        <li>Nombre : qui est une valeur entière 0, 1, 2, 3, ...</li>
+        <li>Entiers : qui est une valeur avec une virgule, comme 2,345, mais la virgule n'existe pas en JavaScrip, on utilise un "."</li>
+    </ul>
+    <br>
+    <h1>Les opérateurs</h1>
+    <h2>Il existe différents types d'opérateurs : </h2>
+    <table class="tableau">
+        <tbody>
+            <tr>
+                <td>
+                    <p class="p-title">Opérateur</p>
+                </td>
+                <td>
+                    <p class="p-title">Rôle</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>+</p>
+                </td>
+                <td>
+                    <p>Addition</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>-</p>
+                </td>
+                <td>
+                    <p>Soustraction</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>*</p>
+                </td>
+                <td>
+                    <p>Multiplication</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>/</p>
+                </td>
+                <td>
+                    <p>Division</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h2>Le type de chaîne</h2>
+    <p>Cette valeur représente un texte. Elle est déléimité par une paire de guillemet doubles : <code>"Ceci est une chaine"</code></p>
+    <p>On peut utiliser les <code>\</code> pour utiliser des caractères spéciaux comme par exemple <code>\n</code> pour faire un retour à la ligne dans une chaîne.</p>
+    <p>Voir l'exercice 2 dans le fichier JavaScript avec le code <code>Ceci est une chaine \n Sur plusieurs lignes</code>.</p>
+    <p>On ne peut pas additionner ou soustraire des valeurs de type chaîne comme on peut le faire des nombres. En revanche, l'opérateur <code>+</code> peut être appliqué à deux valeurs de type chaîne. Son résultat est la jointure de ces deux chaînes, appelée <span class="red">concaténation</span>.</p>
+    <p>Dans l'exercice 3 on a entré la ligne <code>"Ceci est une chaîne" + " | sur plusieurs lignes."</code>. On obtien le résultat <code>"Bonjour"</code>. </p>
+    <br>
+    <h2>Affichage d'une valeur</h2>
+    <p>Lorsqu'on souhaite afficher une valeur depuis un programme JavaScript, on utilise l'ordre JavaScript <code>console.log()</code>. La valeur à afficher est placée entre parenthèses et suivie d'un point-virgule. Il peut s'agir indifféremment d'un nombre ou d'une chaîne de caractères.</p>
+    <p>Nous pouvons maintenant expliquer le résultat du programme <code>cours.js</code> créé dans l'exercice 1 : il affiche la valeur "Bonjour en JavaScript", qui est de type chaîne.</p>
+    <pre>
+        <code>console.log("Bonjour en JAvascript !")</code>
+    </pre>
+    <h1>Structure d'un programme</h1>
+    <h2>Instruction</h2>
+    <p>Chaque ordre inclus dans un programme est appelée une <b>instruction</b>. Une instruction est délimitée par un <b>point virgule</b>. Un programme est constitué d'une suite d'instructions. </p>
+    <h2>Déroulement de l'exécution</h2>
+    <p>L'outil <b>débogage</b> dans les navigateurs de recherche permet d'afficher le déroulement d'un programme Javascript et donc de voir si il y a des bogues dans celui-ci.</p>
+    <p>Nous allons ajouter le code suivant : <br>
+        <div class="marge">
+            <code> 
+            1 - console.log("Bonjour en JavaScript !");<br>
+            2 - console.log("Faisons quelques calculs.");<br>
+            3 - console.log(4 + 7);<br>
+            4 - console.log(12 / 0);<br>
+            5 - console.log("Au revoir !");<br>
+        </code>
+        </div>
+        <p>Voir l'exercice 4</p>
+        <p>L'outil d'ébogage permet de stoper le programme pour visualiser son déroulement. Il se base sur l'ajout de <b>Poits d'arrêt </b>(breakpoints). </p>
+        <br>
+        <h2>Commentaires</h2>
+        <p>On peut transformer une ligne en <b>commentaire</b> grâce au <code>//</code></p>
+        <p>On peut aussi utiliser <code>/* */</code> pour mettre en commentaire l'ensemble du texte entre les deux symboles.</p>
+        <h2>Réalisation des exercices 1,2,3 Codez</h2>
+        <p>Réalisation des exercices suivants : </p>
+        <div class="marge">
+            <a href="../html/presentation.html">Présentation</a><br>
+            <a href="../html/mini-calculatrice.html">Mini calculatrice</a><br>
+            <a href="../html/affichage.html">Affichage</a>
+        </div>
+        <h1>La notion de variable</h1>
+        <h2>Rôle des variables</h2>
+        <p>Un programme informatique mémorise des données en utilisant des <b>variables</b>. Une variable est une zone de stockage d'information. On peut l'imaginer comme une boîte dans laquelle on range des choses. </p>
+        <h2>Propriétés d'une variable</h2>
+        <p>Une variable possède trois grandes propriétés.</p>
+        <table class="tableau">
+            <tbody>
+                <tr>
+                    <td>
+                        <p class="p-title">Propriétés</p>
+                    </td>
+                    <td>
+                        <p class="p-title">Définition</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>NOM</p>
+                    </td>
+                    <td>
+                        <p>Permet de l'identifier. Un nom de variable peut contenir des lettres majuscules ou minuscules, des chiffres (sauf en première position) et certains caractères comme le dollar (<code>$</code>) ou le tiret bas, appelé underscore (<code>_</code>). </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>VALEUR</p>
+                    </td>
+                    <td>
+                        <p>C'est la donnée actuellement mémorisée dans la variable.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>TYPE</p>
+                    </td>
+                    <td>
+                        <p>Détermine le rôle et les opérations applicables à cette variable.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Déclarer une variable</h2>
+        <p>Avant de pouvoir stocker des informations dans une variable, il faut la créer. Cette opération s'appelle la <b>déclaration</b> de la variable.</p>
+        <p>Voici un exemple de code qui déclare une variable puis affiche sa valeur :</p>
+        <div class="marge">
+            <code> 
+            1 - var a;<br>
+            2 - console.log(a);<br>
+        </code>
+        </div>
+        <p>Voir la page d'exemple : </p>
+        <a href="../../chapitre-2/html/cours.html">Cours chapitre 2</a>
+        <p>On constate que le résultat est <code>undefined</code>. Il s'agit d'un type JavaScript qui indique l'absence de valeur.</p>
+        <h2>Affecter une valeur à une variabe</h2>
+        <p>Pour donner une nouvelle valeur à une variable, on utilise l'opérateur <code>=</code>, appelé <b>opérateur d'affectation</b>.</p>
+        <p>On va donc compléter l'exemple avec ce nouveau code : </p>
+        <div class="marge">
+            <code> 
+            1 - var a;<br>
+            2 - a = 3.14;<br>
+            3 - console.log(a);
+        </code>
+        </div>
+        <p>Le résultat de son exécution est le suivant : </p>
+        <a href="../../chapitre-2/html/cours.html">Cours chapitre 2, complété</a>
+        <p>La valeur de la variable a été modifiée par l'opération d'affectation. La ligne a = 3.14 se lit "a reçoit la valeur 3,14".</p>
+        <p>Le programme ci-dessous est équivalent au précédent.</p>
+        <div class="marge">
+            <code> 
+            1 - var a = 3.14;;<br>
+            2 - console.log(a);
+        </code>
+        </div>
+        <h2>Incrémenter une variable de type nombre</h2>
+        <p>Il est également possible d'augmenter ou de diminuer la valeur d'un nombre avec les opérateurs <code>+=</code> et <code>++</code>. Ce dernier est appelé <b>opérateur d'incrémentation</b>, car il permet d'incrémenter (augmenter de 1) la valeur d'une variable.</p>
+        <p>Dans l'exemple suivant, les lignes 2 et 3 permettent chacune d'augmenter la valeur de la variableb de 1.</p>
+        <a href="../../chapitre-2/html/cours.html">Voir l'exercice 3 dans le .js</a>
+        <h2>Espionner la valeur d'une variable pendant le débogage</h2>
+        <p>Grâce à la fonction espionnage de Firefox, on peut suivre l'évolution de la variable et voir à quel moment celle-ci peut avoir un problème.</p>
+        <h1>La notion d'expression</h1>
+        <p>Une <b>expression</b> est un morceau de code qui produit une <b>valeur</b>. <br> On crée une expression en combinant des <span class="red">variables, des valeurs et des opérateurs</span>. Toute expression produit une valeur et correspond à un certain <b>type</b>. Le calcul de la valeur d'une expression s'appelle l'<b>évaluation</b>. Lors de l'évaluation d'une expression, les variables sont remplacées par leur valeur.</p>
+        <p>3 est une expression dont la valeur est le nombre :</p>
+        <code> 
+            var c = 3;
+        </code>
+        <p>d est une expression dont la valeur est celle de c (ici 3) :</p>
+        <code> 
+            var d = c;
+        </code>
+        <p>(d + 1) est une expression. Sa valeur est celle de d augmentée de 1 (ici 4)</p>    
+        <code> 
+            d = d + 1; <br>
+            console.log(d);
+        </code>
+        <p>Une expression peut comporter des parenthèses qui modifient la priorité des opérations lors de l'évaluation. En l'absence de parenthèses, la priorité des opérateurs est la même qu'en mathématiques.</p>
+        <p>Contient la valeur 11 :</p>
+        <code> 
+            var e = 3 + 2 * 4;
+        </code>
+        <p>e contient la valeur 20</p>
+        <code> 
+            e = (3 + 2) * 4;
+        </code>
+        <h1>Conversion de types</h1>
+        <p>L'évaluation d'une expression peut entraîner des conversions de type. Ces conversions sont dites <b>implicites</b> : elles sont faites automatiquement, sans intervention du programmeur.</p>
+        <code>
+            var f = 100;
+            console.log("La variable f contient la valeur" + f);
+        </code>
+        <p>Le rendu : </p>
+        <img src="https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/Capture%20d%E2%80%99%C3%A9cran%202015-07-17%20%C3%A0%2014.31.02.png" alt="conversions de types">
+        <p>Le langage JavaScript est extrêmement tolérant au niveau des conversions de type. Cependant, il arrive qu'aucune conversion ne soit possible. En cas d'échec de la conversion d'un nombre, la valeur du résultat est <code>NaN</code> (Not a Number).</p>
+        <p>Par exemple :</p>
+        <code>
+            var g = "cinq" * 2;<br>
+            console.log(g);
+        </code>
+        <p>Pour forcer la conversion d'une valeur dans un autre type (nombre ou chaîne de caratère), On peut utiliser des conversions explicites comme <code>Number()</code> et <code>String()</code>.</p>
+        <p>Par exemple :</p>
+        <code>
+            var h = "5";<br>
+            console.log(h + 1);
+        </code>
+        <p>Cette <b>concaténation</b> affiche <span class="red">51</span></p>
+        <code>
+            h = Number("5");<br>
+            console.log(h + 1)
+        </code>
+        <p>Cette <b>addition numériqe</b> affiche <span class="red">6</span></p>
+        <h1>Interactions avec l'utilisateur</h1>
+        <h2>Saisie et affichage d'informations</h2>
+        <p>Voir la page suivante pour voir l'exercice "Bonjour.js"</p>
+        <a href="../../chapitre-2/html/bonjour.html">Bonjour.js</a>
+        <p>On peut q'une boite de dialogue souvre dans le navigateur et propose de rentrer son prénom.</p>
+        <p>La valeur saisie dans la première boîte de dialogue a été stockée dans une variable de type chaîne nommée <code>prénom</code>. Ensuite, l'ordre JavaScript <code>alerte()</code> a déclencher l'affichage de la seconde boîte, contenat le résultat de la concaténation de la chaîne <code>"Bonjour"</code> avec la valeur de la variable <code>"prenom"</code>.</p>
+        <p>Il est conseillé d'utiliser <code>console.log()</code> plutôt que <code>alert()</code></p>
+        <h2>Saisie d'un nombre</h2>
+        <p><code>prompt()</code> renvoie toujours une valeur de type chaîne. c'est pour celà qu'on utilise <code>number()</code> pour convertir la valeur en nombre pour la comparer à d'autres nombres ou l'utiliser dans les expressions mathématiques.</p>
+        <p>Voici un exemple de code : </p>
+        <code>
+            var saisie = prompt("Entrer un nombre : ");
+        </code>
+        <p>Cette saisie est de type chaîne.</p>
+        <code>
+            var nb = number(saisie);
+        </code>
+        <p>nb est de type nombre</p>
+        <p>Il est possible de combiner les deux opérations (saisie et conversion) en une seule ligne de code, pour un résultat identique :</p> 
+        <code>var nb = Number(prompt("Entrez un nombre : "));</code>
+        <p>Ici, le résultat de la saisie utilisateur est directement converti en une valeur de type nombre par l'ordre <code>Number()</code> et affecté à la variable <code>nb</code>.</p>
+        <h1>Importance du nommage des variables</h1>
+        <p>La question est la suivante : <b>Comment faire pour bien nommer les variables de ses programmes ?</b></p>
+        <h2>Choisir des nomes significatifs</h2>
+        <p>Donner à une variable un nom qui reflète son <b>rôle</b> ! <br>
+        Exemples :<br></p>
+        <ul>
+            <li>rayon</li>
+            <li>pi</li>
+            <li>perimetre</li>
+        </ul>
+        <h2>Bannir les caractères accentués</h2>
+        <h2>Ne pas utiliser les noms réservés du langage</h2>
+        <p>Vous trouverez sur <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Mots_r%C3%A9serv%C3%A9s">cette page</a> la liste des noms réservés de JavaScript.</p>
+        <h2>Adopter une convention de nommage</h2>
+        <p>Nous pouvons utiliser la norme <a href="https://fr.wikipedia.org/wiki/CamelCase">camelCase</a> (appelée parfois lowerCamelCase). Elle repose sur deux grands principes :</p>
+        <ul>
+            <li>Tout nom de variable commence par une lettre minucscule.</li>
+            <li>Si le nom d'une variable se compose de plusieurs mots, la première lettre de chaque mot (sauf le premier) s'écrit en <b>majuscule</b>.</li>
+        </ul>
+        <p>Par exemple, les noms <code>montantTravauxMaison</code> ou <code>codeClientSuivant</code> respectent la norme camelCase.</p>
+        <h2>Exercice pour appliquer ces notions</h2>
+        <p>Voici une page avec les différentes notions abbordées précédament :</p>
+        <a href="../../chapitre-2/html/valeur-final.html">valeur-final.js</a><br>
+        <a href="../../chapitre-2/html/tva.html">tva.js</a><br>
+        <a href="../../chapitre-2/html/celsius-fahrenheit.html">Conversion Celsius / Fahrenheit</a><br>
+        <a href="../../chapitre-2/html/permutation.html">Permutation</a><br>
+        <h1>Ajouter des conditions</h1>
+        <h2>Exprimer une condition</h2>
+        <p>Voici un algorithme :</p>
+        <p>Saisir un nombre <br>
+        Si ce nombre est positif<br></p>
+        <p>Afficher un message <br></p>
+        <p>L'affichage du message ne doit avoir leu que si le nombre est positif : on dit qu'il est soumis à une condition.</p>
+        <h2>l'instruction if</h2>
+        <p>Voici comment ce programme se traduit en JavaScript</p>
+        <code>
+            var nombre = Number(prompt("Entrer un nombre :"));<br>
+            if (nombre > 0){<br>
+                console.log(nombre + " est positif");<br>
+            }
+        </code>
+        <p>Voir l'exemple dans le <a href="../../chapitre-3/html/cours.html">cours chapitre 3</a></p>
+        <p>Voici donc comment soumettre l'exécution d'une partie d'un programme à une condition grâce à l'instruction JavaScript <code>if</code>. La syntaxe de cette instruction est la suivante.</p>
+        <code>if (condition){<br>
+           // instructions exécutées quand la condition est vraie <br>
+        }</code>
+        <p>Le <b>bloc de code</b> est délimité par les accolades.</p>
+        <p>Le <b>test</b> est représentée par l'instruction <code>if</code>. Qui est associée au bloc de code. </p>
+        <p>La <b>condition</b> est toujours placée entre parenthèse après le <code>if</code>.</p>
+        <p>Il faut toujours bien pensée à <b>indenter</b> son code pour qu'il reste lisible par les autres développeurs.</p>
+        <h2>La notion de condition</h2>
+        <p>Une <b>condition</b> est une expression dont l'évaluation produit une valeur soit vraie, soit fausse : on parle de valeur <b>booléenne</b>.</p>
+        <p>Quand une valeur d'une condition est vraie, on dit qu'elle est <b>vérifiée</b>.</p>
+        <p><b>nombre</b> et <b>chaîne</b> font partie du même type que <b>booléen</b>. Ce type n'a que deux valeurs possibles : <code>true</code> et <code>false</code>.</p>
+        <code>if (true) {<br>
+        }</code>
+        <p>la condition du if est toujours vraie, les instructions de ce bloc seront toujours exécutées</p>
+        <code>if (false){<br>
+        }</code>
+        <p>la condition de if est toujours fausse, les instructions de ce bloc ne seront jamais exécutées.</p>
+        <p>On peut créer des expressions booléennes en utilisant les opérations de comparaison regroupés dans le tableau suivant.</p>
+        <table class="tableau">
+        <tbody>
+            <tr>
+                <td>
+                    <p class="p-title">Opérateur</p>
+                </td>
+                <td>
+                    <p class="p-title">Signification</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p> === </p>
+                </td>
+                <td>
+                    <p>Egal à</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p> !== </p>
+                </td>
+                <td>
+                    <p>Différent de</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p> < </p>
+                </td>
+                <td>
+                    <p>Inférieur à</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p> <= </p>
+                </td>
+                <td>
+                    <p>Inférieur ou égal à</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p> > </p>
+                </td>
+                <td>
+                    <p>Supérieur à</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p> >= </p>
+                </td>
+                <td>
+                    <p>Supérieur ou égal à</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Test 2, on change l'opérateur de <code>></code> en <code>>=</code>.</p>
+</body>
+
+</html>

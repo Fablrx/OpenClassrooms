@@ -1,0 +1,50 @@
+<style type ="texte/css">
+
+.tableau{
+    border: 6px solid rgba(0,0,0,.6);
+    margin-bottom: 20px;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border color: green;
+
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr{
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    background-color: #f0f0f0;
+}
+td{
+    vertical-align: top;
+    padding: 8px;
+    display: table-cell;
+    
+}
+
+/* PARAGRAPHES */
+p{
+    color: #114180;    
+}
+.p-title{
+    text-transform: uppercase;
+}
+
+/* CODE */
+code{
+    background: rgba(0,0,0,.04);
+    padding: 1px 5px;
+    border: 1px solid rgba(0,0,0,.09)
+}
+.red{
+    color: red;
+    font-weight: 700;
+}
+.marge{
+    margin-left: 5em;
+}
